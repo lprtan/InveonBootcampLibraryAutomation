@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\DataAccessLayer\\Migrations\\20241211192441_BookTableMig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Migrations\\20241211192441_BookTableMig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4A379C-9618-464A-B946-61CAC2762DD9}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\dataaccesslayer\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4A379C-9618-464A-B946-61CAC2762DD9}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B393900F-7385-4F2D-A3BF-BBA1FD81E305}|EntityLayer\\EntityLayer.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\entitylayer\\concrete\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B393900F-7385-4F2D-A3BF-BBA1FD81E305}|EntityLayer\\EntityLayer.csproj|solutionrelative:entitylayer\\concrete\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241211192441_BookTableMig.cs",
+              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\DataAccessLayer\\Migrations\\20241211192441_BookTableMig.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20241211192441_BookTableMig.cs",
+              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\DataAccessLayer\\Migrations\\20241211192441_BookTableMig.cs",
+              "RelativeToolTip": "DataAccessLayer\\Migrations\\20241211192441_BookTableMig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T19:24:42.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\appsettings.json",
+              "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\appsettings.json",
+              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\appsettings.json",
+              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-11T19:01:09.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Program.cs",
+              "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Program.cs",
+              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Program.cs",
+              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T18:56:03.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\DataAccessLayer\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\DataAccessLayer\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T18:36:33.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\EntityLayer\\Concrete\\Book.cs",
+              "RelativeDocumentMoniker": "EntityLayer\\Concrete\\Book.cs",
+              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\EntityLayer\\Concrete\\Book.cs",
+              "RelativeToolTip": "EntityLayer\\Concrete\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T18:30:52.93Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
