@@ -16,9 +16,10 @@ namespace BusinessLayer.Services.Concrete
             _unitOfWork = unitOfWork;
         }
 
-        public Task AddAsync(T entity)
+        public async Task AddAsync(T entity)
         {
-            throw new NotImplementedException();
+            await _unitOfWork.DynamicRepository<T>().AddAsync(entity);
+            await _unitOfWork.SaveAsync();
         }
 
         public async Task DeleteAsync(T entity)
