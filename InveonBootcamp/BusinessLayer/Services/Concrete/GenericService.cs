@@ -32,11 +32,6 @@ namespace BusinessLayer.Services.Concrete
         {
             var entity = _unitOfWork.DynamicRepository<T>().GetByIdAsync(id);
 
-            if (entity == null)
-            {
-                throw new InvalidOperationException();
-            }
-
             _unitOfWork.DynamicRepository<T>().DeleteByIdAsync(id);
             _unitOfWork.SaveAsync();
         }
@@ -44,35 +39,18 @@ namespace BusinessLayer.Services.Concrete
         public async Task<IEnumerable<T>> GetAllAsync()
         {
             var entityList = await _unitOfWork.DynamicRepository<T>().GetAllAsync();
-
-            if (entityList == null)
-            {
-                throw new InvalidOperationException();
-            }
-
             return entityList;
         }
 
         public async Task<T> GetByIdAsync(int id)
         {
             var entity = await _unitOfWork.DynamicRepository<T>().GetByIdAsync(id);
-
-            if (entity == null)
-            {
-                throw new InvalidOperationException();
-            }
             return entity;
         }
 
         public async Task UpdateAsync(int id, T entity)
         {
             var entityId = await _unitOfWork.DynamicRepository<T>().GetByIdAsync(id);
-
-            if (entityId == null)
-            {
-                throw new InvalidOperationException();
-            }
-
             await _unitOfWork.DynamicRepository<T>().UpdateAsync(entity);
             await _unitOfWork.SaveAsync();
         }

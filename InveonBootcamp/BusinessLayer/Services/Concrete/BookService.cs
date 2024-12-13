@@ -50,11 +50,6 @@ namespace BusinessLayer.Services.Concrete
         {
             var book = await _unitOfWork.BookRepository.GetByIdAsync(id);
 
-            if (book != null)
-            {
-                return null;
-            }
-
             var bookDetailDto = _mapper.Map<BookDetailsDto>(book);
 
             return bookDetailDto;
