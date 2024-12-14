@@ -6,6 +6,10 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
         public IActionResult Error()
         {
             var errorMessage = HttpContext.Items["ErrorMessage"]?.ToString() ?? "Bilinmeyen bir hata oluþtu.";

@@ -14,13 +14,12 @@ namespace InveonBootcamp.LibraryAutomation.Models.ErrorHandling
 
             logger.LogError(errorMessageDeveloper);
 
-            var errorViewModel = new ErrorViewModel
-            {
-                RequestId = httpContext.TraceIdentifier,
-                ErrorMessage = errorMessageProduct
-            };
+            httpContext.Items["ErrorMessage"] = errorMessageProduct;
+            httpContext.Items["RequestId"] = httpContext.TraceIdentifier;
 
-            httpContext.Response.Redirect($"/Home/Error?requestId={errorViewModel.RequestId}");
+            httpContext.Response.StatusCode = StatusCodes.Status403Forbidden;
+            httpContext.Response.Redirect("/Home/Error");
+
             return new ValueTask<bool>(true);
         }
     }

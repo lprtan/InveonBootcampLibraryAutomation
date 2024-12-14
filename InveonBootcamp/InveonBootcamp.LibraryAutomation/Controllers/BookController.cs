@@ -2,8 +2,7 @@
 using BusinessLayer.Services.Abstract;
 using EntityLayer.Concrete;
 using AutoMapper;
-using BusinessLayer.Dtos;
-using BusinessLayer.Mapping;
+using CoreLayer.Mapping;
 
 namespace InveonBootcamp.LibraryAutomation.Controllers
 {

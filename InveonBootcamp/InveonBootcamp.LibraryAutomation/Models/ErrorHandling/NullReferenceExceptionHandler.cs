@@ -17,6 +17,9 @@ namespace InveonBootcamp.LibraryAutomation.Models.ErrorHandling
             httpContext.Items["ErrorMessage"] = errorMessageProduct;
             httpContext.Items["RequestId"] = httpContext.TraceIdentifier;
 
+            httpContext.Response.StatusCode = StatusCodes.Status404NotFound;
+            httpContext.Response.Redirect("/Home/Error");
+
             return new ValueTask<bool>(true);
         }
     }

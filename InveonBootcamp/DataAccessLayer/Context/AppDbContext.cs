@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Context
 {
-    public class AppDbContext : IdentityDbContext
+    public class AppDbContext : IdentityDbContext<UserApp>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
