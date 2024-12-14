@@ -10,12 +10,10 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.UnitOfWork
 {
-    public class UnitOfWork : IUnitOfWork, IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContext _dbContext;
         public IGenericRepository<Book> BookRepository { get; private set; }
-
-        private bool disposed = false;
 
         public UnitOfWork(AppDbContext dbContext) 
         {
@@ -44,24 +42,6 @@ namespace DataAccessLayer.UnitOfWork
                     throw;
                 }
             }
-        }
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!disposed)
-            {
-                if (disposing)
-                {
-                    _dbContext.Dispose();
-                }
-                disposed = true;
-            }
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
         }
     }
 }

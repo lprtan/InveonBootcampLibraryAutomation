@@ -1,4 +1,6 @@
+using BusinessLayer.Mapping;
 using DataAccessLayer.Context;
+using DataAccessLayer.UnitOfWork;
 using InveonBootcamp.LibraryAutomation.Models.ErrorHandling;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +12,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MsSqlConnection")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddAutoMapper(typeof(BookMappingProfile));
+builder.Services.AddScoped<IBookMappingService, BookMappingService>();
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddLogging();
 

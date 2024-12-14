@@ -1,22 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BusinessLayer.Services.Abstract;
 using EntityLayer.Concrete;
+using AutoMapper;
+using BusinessLayer.Dtos;
+using BusinessLayer.Mapping;
 
 namespace InveonBootcamp.LibraryAutomation.Controllers
 {
     public class BookController : Controller
     {
-        private readonly IBookService _bookService;
-
-        public BookController(IBookService bookService)
+        private readonly IGenericService<Book> _bookService;
+        private readonly IBookMappingService _bookMappingService;
+        public BookController(IGenericService<Book> bookService, IBookMappingService bookMappingService)
         {
             _bookService = bookService;
+            _bookMappingService = bookMappingService;
         }
 
         public async Task<IActionResult> Index()
         {
-            var books = await _bookService.BookListAsync();
-            return View(books);
+            var books = await _bookService.GetAllAsync();
+
+            var bookListDto = _bookMappingService.MapToBookListDto(books);
+
+            return View(bookListDto);
         }
 
         public async Task<IActionResult> Get(int id)
@@ -77,12 +84,11 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
 
         public async Task<IActionResult> Details(int id)
         {
-            var book = await _bookService.BookDetailListAsync(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
-            return View(book);
+            var book = await _bookService.GetByIdAsync(id);
+
+            var bookDetail = _bookMappingService.MapToBookDetailsDto(book);
+
+            return View(bookDetail);
         }
     }
 }

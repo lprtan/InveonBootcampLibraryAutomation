@@ -29,7 +29,7 @@ namespace DataAccessLayer.Repositories
         public async Task DeleteByIdAsync(int id)
         {
             var entityId = await _dbcontext.Set<T>().FindAsync(id);
-            DeleteAsync(entityId);
+            await DeleteAsync(entityId);
         }
 
         public async Task<IEnumerable<T>> GetAllAsync()

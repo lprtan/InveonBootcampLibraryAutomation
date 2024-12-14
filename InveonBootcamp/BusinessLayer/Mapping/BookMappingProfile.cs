@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Mapping
 {
-    public class MappingProfile : Profile
+    public class BookMappingProfile : Profile
     {
-        public MappingProfile()
+        public BookMappingProfile()
         {
             CreateMap<Book, BookListDto>();
             CreateMap<Book, BookDetailsDto>();

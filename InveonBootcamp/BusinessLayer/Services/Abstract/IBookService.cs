@@ -8,9 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Services.Abstract
 {
-    public interface IBookService :IGenericService<Book> 
+    public interface IBookService
     {
-        Task<List<BookListDto>> BookListAsync();
-        Task<BookDetailsDto> BookDetailListAsync(int id);
     }
 }
