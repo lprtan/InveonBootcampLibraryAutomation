@@ -10,10 +10,11 @@ namespace BusinessLayer.Services.Abstract
 {
     public interface IUserService
     {
-        Task<(bool IsSuccess, string? ErrorMessage, UserAppDto? User)> CreateUserAsync(UserDto createUserDto);
+        Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> CreateUserAsync(UserDto createUserDto);
 
-        Task<(bool IsSuccess, string? ErrorMessage, UserAppDto? User)> GetUserByNameAsync(string userName);
-        Task<(bool IsSuccess, string? ErrorMessage, UserAppDto? User)> LoginUserAsync(UserDto loginUserDto);
+        Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> GetUserByNameAsync(string userName);
+        Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> LoginUserAsync(UserDto loginUserDto);
+        Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> UpdateUserAsync(UserDto updateUserDto);
     }
 
 }

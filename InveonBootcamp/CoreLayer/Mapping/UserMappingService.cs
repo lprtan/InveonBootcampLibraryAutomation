@@ -16,10 +16,10 @@ namespace CoreLayer.Mapping
         {
             _mapper = mapper;
         }
-        public UserAppDto MapToUserAppDto(UserApp user)
-        {
 
-            return _mapper.Map<UserAppDto>(user);
+        UserDto IUserMappingService.MapToUserAppDto(UserApp user)
+        {
+            return _mapper.Map<UserDto>(user);
         }
     }
 }

@@ -23,7 +23,7 @@ namespace BusinessLayer.Services.Concrete
             _userMappingService = userMappingService;
         }
 
-        public async Task<(bool IsSuccess, string? ErrorMessage, UserAppDto? User)> CreateUserAsync(UserDto createUserDto)
+        public async Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> CreateUserAsync(UserDto createUserDto)
         {
             var user = new UserApp
             {
@@ -46,7 +46,7 @@ namespace BusinessLayer.Services.Concrete
             return (true, null, userDto);
         }
 
-        public async Task<(bool IsSuccess, string? ErrorMessage, UserAppDto? User)> GetUserByNameAsync(string userName)
+        public async Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> GetUserByNameAsync(string userName)
         {
             var user = await _user.FindByNameAsync(userName);
 
@@ -61,7 +61,7 @@ namespace BusinessLayer.Services.Concrete
             return (true, null, userDto);
         }
 
-        public async Task<(bool IsSuccess, string? ErrorMessage, UserAppDto? User)> LoginUserAsync(UserDto loginUserDto)
+        public async Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> LoginUserAsync(UserDto loginUserDto)
         {
             var user = await _user.FindByNameAsync(loginUserDto.UserName);
 
@@ -75,6 +75,44 @@ namespace BusinessLayer.Services.Concrete
             if (!isPasswordValid)
             {
                 return (false, "Şifre yanlış.", null);
+            }
+
+            var userDto = _userMappingService.MapToUserAppDto(user);
+
+            return (true, null, userDto);
+        }
+
+        public async Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> UpdateUserAsync(UserDto updateUserDto)
+        {
+            var user = await _user.FindByNameAsync(updateUserDto.UserName);
+
+            if (user == null)
+            {
+                return (false, "Kullanıcı bulunamadı.", null);
+            }
+
+            user.Email = updateUserDto.Email;
+            user.FirstName = updateUserDto.FirstName;
+            user.LastName = updateUserDto.LastName;
+
+            if (!string.IsNullOrEmpty(updateUserDto.Password))
+            {
+                var token = await _user.GeneratePasswordResetTokenAsync(user);
+                var result = await _user.ResetPasswordAsync(user, token, updateUserDto.Password);
+
+                if (!result.Succeeded)
+                {
+                    var errors = string.Join(", ", result.Errors.Select(x => x.Description));
+                    return (false, errors, null);
+                }
+            }
+
+            var updateResult = await _user.UpdateAsync(user);
+
+            if (!updateResult.Succeeded)
+            {
+                var errors = string.Join(", ", updateResult.Errors.Select(x => x.Description));
+                return (false, errors, null);
             }
 
             var userDto = _userMappingService.MapToUserAppDto(user);

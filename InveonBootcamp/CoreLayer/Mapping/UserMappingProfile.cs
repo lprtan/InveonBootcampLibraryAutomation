@@ -13,7 +13,7 @@ namespace CoreLayer.Mapping
     {
         public UserMappingProfile()
         {
-            CreateMap<UserApp, UserAppDto>();
+            CreateMap<UserApp, UserDto>();
         }
     }
 }

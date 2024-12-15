@@ -10,6 +10,6 @@ namespace CoreLayer.Mapping
 {
     public interface IUserMappingService
     {
-        UserAppDto MapToUserAppDto(UserApp user);
+        UserDto MapToUserAppDto(UserApp user);
     }
 }

@@ -37,6 +37,13 @@ builder.Services.AddScoped<IExceptionHandler, NullReferenceExceptionHandler>();
 builder.Services.AddScoped<IExceptionHandler, UnauthorizedAccessExceptionHandler>();
 builder.Services.AddScoped<IExceptionHandler, TimeoutExceptionHandler>();
 
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); 
+    options.Cookie.HttpOnly = true; 
+    options.Cookie.IsEssential = true; 
+});
+
 builder.Services.AddIdentity<UserApp, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
@@ -55,6 +62,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

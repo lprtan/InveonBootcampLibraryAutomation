@@ -30,11 +30,13 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
                 return RedirectToAction("Login", "User");
             }
 
-            return View(userModel);
+            return View(result.User);
         }
 
-        public async Task<IActionResult> GetUser(string userName)
+        public async Task<IActionResult> GetUser()
         {
+            var userName = HttpContext.Session.GetString("UserName");
+
             if (string.IsNullOrEmpty(userName))
             {
                 return BadRequest("Kullanıcı adı boş olamaz.");
@@ -42,7 +44,7 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
 
             var user = await _userService.GetUserByNameAsync(userName);
 
-            return View(user);
+            return View(user.User);
         }
 
         public IActionResult Login()
@@ -57,10 +59,25 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
 
             if (user.IsSuccess)
             {
+                HttpContext.Session.SetString("UserName", userLoginModel.UserName);
                 return RedirectToAction("Index", "Book");
             }
 
-            return View(userLoginModel);
+            return View(user.User);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> UpdateUser(UserDto userUpdateModel)
+        {
+            var user = await _userService.UpdateUserAsync(userUpdateModel);
+
+            if (user.IsSuccess)
+            {
+                return RedirectToAction("Index", "Book");
+            }
+
+            return View(userUpdateModel);
+
         }
     }
 }
