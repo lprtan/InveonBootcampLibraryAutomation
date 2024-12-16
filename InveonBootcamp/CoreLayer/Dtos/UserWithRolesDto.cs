@@ -8,7 +8,7 @@ namespace CoreLayer.Dtos
 {
     public class UserWithRolesDto
     {
-        public UserDto User { get; set; }
-        public List<string> Roles { get; set; }
+        public UserDto? User { get; set; }
+        public List<string>? Roles { get; set; }
     }
 }

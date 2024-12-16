@@ -14,10 +14,6 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
             _userRoleService = userRoleService;
         }
 
-        public IActionResult CreateRole()
-        {
-            return View();
-        }
 
         [HttpGet]
         public async Task<IActionResult> CreateRoleToUser(string userName)
@@ -40,6 +36,11 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
             return View(result.Errors);
         }
 
+        public IActionResult CreateRole()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateRole(string roleName)
         {
@@ -47,8 +48,7 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
 
             if (result.Succeeded)
             {
-                return RedirectToAction("Index", "Book");
-                //return RedirectToAction("ListRoles");
+                return RedirectToAction("Index", "Admin");
             }
 
             return View(result.Errors);

@@ -91,6 +91,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="UserRole" asp-action="CreateRole">Rol ekle</a>
                         </li>
                     </ul>
+                    <ul>
+                        <form asp-controller="Account" asp-action="LogOut" method="post" class="ms-2">
+                            <button type="submit" class="btn btn-outline-danger">
+                                <i class="fas fa-sign-out-alt"></i> Çıkış Yap
+                            </button>
+                        </form>
+                    </ul>
                 </div>
             </div>
         </nav>

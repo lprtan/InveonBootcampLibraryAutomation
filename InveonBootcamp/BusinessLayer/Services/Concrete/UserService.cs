@@ -47,13 +47,13 @@ namespace BusinessLayer.Services.Concrete
             return (true, null, userDto);
         }
 
-        public async Task<(bool IsSuccess, string? ErrorMessage, List<UserDto>? User)> DeleteByIdAsync(string id)
+        public async Task<(bool IsSuccess, string? ErrorMessage)> DeleteByIdAsync(string id)
         {
             var user = await _user.FindByIdAsync(id);
 
             if(user == null)
             {
-                return (false, "Kullanıcı Bulunamadı", null);
+                return (false, "Kullanıcı Bulunamadı");
             }
 
             var result = await _user.DeleteAsync(user);
@@ -61,10 +61,10 @@ namespace BusinessLayer.Services.Concrete
             if (!result.Succeeded)
             {
                 var errors = string.Join(", ", result.Errors.Select(x => x.Description));
-                return (false, errors, null);
+                return (false, errors);
             }
 
-            return (true, null, null);
+            return (true, null);
         }
 
         public async Task<(bool IsSuccess, string? ErrorMessage, List<UserDto>? User)> GetAllUserAsync()

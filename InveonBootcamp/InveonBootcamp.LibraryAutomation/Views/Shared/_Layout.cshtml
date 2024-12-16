@@ -28,6 +28,11 @@
                         <button type="button" class="btn btn-outline-primary" onclick="window.location.href='@Url.Action("GetUser", "User")'">
                             <i class="fas fa-user"></i>
                         </button>
+                        <form asp-controller="Account" asp-action="LogOut" method="post" class="ms-2">
+                            <button type="submit" class="btn btn-outline-danger">
+                                <i class="fas fa-sign-out-alt"></i> Çıkış Yap
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
