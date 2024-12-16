@@ -117,5 +117,18 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
             return View(userUpdateModel);
 
         }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(string userId)
+        {
+            var result = await _userService.DeleteByIdAsync(userId);
+
+            if (result.IsSuccess)
+            {
+                return RedirectToAction("GetAllUser", "User");
+            }
+
+            return View(result.ErrorMessage);
+        }
     }
 }

@@ -66,7 +66,8 @@
                     <th scope="col">Dil</th>
                     <th scope="col">Özet</th>
                     <th scope="col">Kopya sayısı</th>
-                    <th scope="col">İşlemler</th>
+                    <th scope="col">Güncelle</th>
+                    <th scope="col">Si</th>
                 </tr>
             </thead>
             <tbody>
@@ -85,8 +86,14 @@
                         <td>@book.Summary.Substring(0, Math.Min(book.Summary.Length, 30))...</td>
                         <td>@book.AvailableCopies</td>
                         <td>
-                            <button class="btn-edit" onclick="window.location.href='@Url.Action("Edit", "Book", new { id = book.Id })'">Güncelle</button>
-                            <button class="btn-delete" onclick="if(confirm('Kitap silinecek. Emin misiniz?')) { window.location.href='@Url.Action("Delete", "Book", new { id = book.Id })'; }">Sil</button>
+                            <form>
+                                <button class="btn-edit" onclick="window.location.href='@Url.Action("Edit", "Book", new { id = book.Id })'">Güncelle</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form>
+                                <button class="btn-delete" onclick="if(confirm('Kitap silinecek. Emin misiniz?')) { window.location.href='@Url.Action("Delete", "Book", new { id = book.Id })'; }">Sil</button>
+                            </form>
                         </td>
                     </tr>
                 }

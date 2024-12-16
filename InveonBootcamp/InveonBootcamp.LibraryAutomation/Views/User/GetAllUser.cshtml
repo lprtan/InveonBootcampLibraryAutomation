@@ -128,7 +128,10 @@
                             }
                         </td>
                         <td>
-                            <button class="btn-action btn-delete" onclick="if(confirm('Kullanıcıyı silmek istediğinize emin misiniz?')) { window.location.href='@Url.Action("Delete", "User")' }">Kullanıcı Sil</button>
+                            <form action="@Url.Action("DeleteUser", "User")" method="post">
+                                <input type="hidden" name="userId" value="@user.User.Id" />
+                                <button type="submit" class="btn btn-danger">Sil</button>
+                            </form>
                         </td>
                     </tr>
                 }

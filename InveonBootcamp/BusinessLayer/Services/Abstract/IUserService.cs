@@ -16,6 +16,7 @@ namespace BusinessLayer.Services.Abstract
         Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> LoginUserAsync(UserDto loginUserDto);
         Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> UpdateUserAsync(UserDto updateUserDto);
         Task<(bool IsSuccess, string? ErrorMessage, List<UserDto>? User)> GetAllUserAsync();
+        Task<(bool IsSuccess, string? ErrorMessage, List<UserDto>? User)> DeleteByIdAsync(string id);
     }
 
 }
