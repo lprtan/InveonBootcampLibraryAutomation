@@ -21,6 +21,8 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
                 ErrorMessage = errorMessage
             };
 
+            ViewData["Title"] = "Error";
+
             return View(errorViewModel);
         }
     }

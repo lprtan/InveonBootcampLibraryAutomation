@@ -1,4 +1,4 @@
-﻿@model ErrorViewModel
+﻿@model InveonBootcamp.LibraryAutomation.Models.ErrorViewModel
 @{
     ViewData["Title"] = "Error";
 }
@@ -6,11 +6,16 @@
 <h1 class="text-danger">Error.</h1>
 <h2 class="text-danger">An error occurred while processing your request.</h2>
 
-@if (Model.ErrorMessage != null)
+@* @if (!string.IsNullOrEmpty(Model.ErrorMessage))
 {
-    <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
-    </p>
+    <p><strong>Error Message:</strong> @Model.ErrorMessage</p>
+} *@
+
+<p><strong>Error Message:</strong> @Model.ErrorMessage</p>
+
+@if (!string.IsNullOrEmpty(Model.RequestId))
+{
+    <p><strong>Request ID:</strong> <code>@Model.RequestId</code></p>
 }
 
 <h3>Development Mode</h3>

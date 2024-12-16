@@ -3,6 +3,7 @@ using CoreLayer.Dtos;
 using CoreLayer.Mapping;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +35,7 @@ namespace BusinessLayer.Services.Concrete
             };
 
             var result = await _user.CreateAsync(user, createUserDto.Password);
-
+            
             if (!result.Succeeded)
             {
                 var errors = string.Join(", ", result.Errors.Select(x => x.Description));
@@ -43,6 +44,20 @@ namespace BusinessLayer.Services.Concrete
 
             var userDto = _userMappingService.MapToUserAppDto(user);
 
+            return (true, null, userDto);
+        }
+
+        public async Task<(bool IsSuccess, string? ErrorMessage, List<UserDto>? User)> GetAllUserAsync()
+        {
+            var users = await _user.Users.ToListAsync();
+
+            if (users == null)
+            {
+                var errorMessage = "Kullanıcı listesi boş";
+                return (false, errorMessage, null);
+            }
+
+            var userDto = _userMappingService.MapToUserAppDtoList(users);
             return (true, null, userDto);
         }
 

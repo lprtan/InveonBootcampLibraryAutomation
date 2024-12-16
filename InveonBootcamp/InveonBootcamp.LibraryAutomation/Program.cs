@@ -37,6 +37,8 @@ builder.Services.AddScoped<IExceptionHandler, NullReferenceExceptionHandler>();
 builder.Services.AddScoped<IExceptionHandler, UnauthorizedAccessExceptionHandler>();
 builder.Services.AddScoped<IExceptionHandler, TimeoutExceptionHandler>();
 
+builder.Services.AddScoped<IUserRoleService, UserRoleService>();
+
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30); 
@@ -53,6 +55,16 @@ builder.Services.AddControllers().AddFluentValidation(fv => fv.RegisterValidator
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+if(app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();  
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
 
 
 // Configure the HTTP request pipeline.

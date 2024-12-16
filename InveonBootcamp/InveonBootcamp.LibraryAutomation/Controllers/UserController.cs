@@ -10,11 +10,19 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
     public class UserController : Controller
     {
         private readonly IUserService _userService;
+        private readonly IUserRoleService _roleService;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService userService, IUserRoleService roleService)
         {
             _userService = userService;
+            _roleService = roleService;
         }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public IActionResult CreateUser()
         {
             return View();
@@ -47,6 +55,26 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
             return View(user.User);
         }
 
+        public async Task<IActionResult> GetAllUser()
+        {
+            var users = await _userService.GetAllUserAsync();
+
+            var userWithRolesDto= new List<UserWithRolesDto>();
+
+            foreach (var user in users.User)
+            {
+                var roles = await _roleService.GetUserRolesAsync(user.UserName);
+
+                userWithRolesDto.Add(new UserWithRolesDto
+                {
+                    User = user,
+                    Roles = roles
+                });
+            }
+
+            return View(userWithRolesDto);
+        }
+
         public IActionResult Login()
         {
             return View();
@@ -60,7 +88,17 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
             if (user.IsSuccess)
             {
                 HttpContext.Session.SetString("UserName", userLoginModel.UserName);
-                return RedirectToAction("Index", "Book");
+
+                var roles = await _roleService.GetUserRolesAsync(userLoginModel.UserName);
+
+                if (roles.Contains("Admin"))
+                {
+                    return RedirectToAction("Index", "Admin");
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Book");
+                }
             }
 
             return View(user.User);

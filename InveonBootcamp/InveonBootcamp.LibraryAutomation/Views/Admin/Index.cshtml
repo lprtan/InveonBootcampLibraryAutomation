@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Örneği</title>
     <style>
-        /* Navbar'ı sabitlemek için */
+
         .navbar {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             background-color: white;
-            z-index: 1030; /* Navbar'ın üstte kalması için */
+            z-index: 1030; 
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        /* Navbar'dan sonra gelen içeriği kaydırmak için */
         body {
             margin: 0;
-            padding-top: 60px; /* Navbar'ın yüksekliği kadar boşluk bırak */
+            padding-top: 60px;
         }
 
         .navbar-nav {
@@ -69,14 +68,29 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="Index">Ana Sayfa</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Ana Sayfa</a>
                         </li>
                     </ul>
-                    <div class="d-flex align-items-center">
-                        <button type="button" class="btn btn-outline-primary" onclick="window.location.href='@Url.Action("GetUser", "User")'">
-                            <i class="fas fa-user"></i>
-                        </button>
-                    </div>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Book" asp-action="AdminBookDetails">Kitaplar</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="GetAllUser">Kullanıcılar</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="GetAllUser">Kitap Ekle</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="UserRole" asp-action="CreateRole">Rol ekle</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

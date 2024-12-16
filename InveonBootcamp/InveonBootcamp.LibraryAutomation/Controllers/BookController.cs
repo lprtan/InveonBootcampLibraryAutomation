@@ -3,6 +3,7 @@ using BusinessLayer.Services.Abstract;
 using EntityLayer.Concrete;
 using AutoMapper;
 using CoreLayer.Mapping;
+using CoreLayer.Dtos;
 
 namespace InveonBootcamp.LibraryAutomation.Controllers
 {
@@ -23,6 +24,12 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
             var bookListDto = _bookMappingService.MapToBookListDto(books);
 
             return View(bookListDto);
+        }
+
+        public async Task<IActionResult> AdminBookDetails()
+        {
+            var books = await _bookService.GetAllAsync();
+            return View(books);
         }
 
         public async Task<IActionResult> Get(int id)

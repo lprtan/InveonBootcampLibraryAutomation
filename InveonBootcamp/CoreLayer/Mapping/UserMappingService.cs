@@ -17,6 +17,11 @@ namespace CoreLayer.Mapping
             _mapper = mapper;
         }
 
+        public List<UserDto> MapToUserAppDtoList(List<UserApp> users)
+        {
+            return _mapper.Map<List<UserDto>>(users);
+        }
+
         UserDto IUserMappingService.MapToUserAppDto(UserApp user)
         {
             return _mapper.Map<UserDto>(user);
