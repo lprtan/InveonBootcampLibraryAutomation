@@ -31,6 +31,7 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(UserDto userModel)
         {
+            ModelState.Remove("Id");
             if (!ModelState.IsValid)
             {
                 return View();
