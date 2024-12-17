@@ -1,0 +1,144 @@
+﻿@using CoreLayer.Dtos
+@model BookDetailsDto
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.Title - Detaylar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7fb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .details-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #007bff;
+        }
+
+        .details-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+            .details-header h1 {
+                font-size: 2.5rem;
+                color: #333;
+                font-weight: 600;
+            }
+
+            .details-header p {
+                font-size: 1.1rem;
+                color: #6c757d;
+            }
+
+        .details-row {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+            .details-row label {
+                font-weight: bold;
+                color: #007bff;
+            }
+
+            .details-row p {
+                margin-top: 5px;
+                font-size: 1.2rem;
+            }
+
+        .btn-back {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 5px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-back:hover {
+                background-color: #0056b3;
+            }
+
+        .details-row p,
+        .details-header p {
+            line-height: 1.6;
+        }
+
+        .details-container a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="details-container">
+        <div class="details-header">
+            <h1>@Model.Title</h1>
+            <p class="text-muted">Yazar: @Model.Author</p>
+        </div>
+
+        <div class="details-row">
+            <label>Id:</label>
+            <p>@Model.Id</p>
+        </div>
+
+        <div class="details-row">
+            <label>Yayınlanma Yılı:</label>
+            <p>@Model.PublicationYear</p>
+        </div>
+
+        <div class="details-row">
+            <label>ISBN:</label>
+            <p>@Model.ISBN</p>
+        </div>
+
+        <div class="details-row">
+            <label>Tür:</label>
+            <p>@Model.Genre</p>
+        </div>
+
+        <div class="details-row">
+            <label>Yayınevi:</label>
+            <p>@Model.Publisher</p>
+        </div>
+
+        <div class="details-row">
+            <label>Sayfa Sayısı:</label>
+            <p>@Model.PageCount</p>
+        </div>
+
+        <div class="details-row">
+            <label>Dil:</label>
+            <p>@Model.Language</p>
+        </div>
+
+        <div class="details-row">
+            <label>Özet:</label>
+            <p>@Model.Summary</p>
+        </div>
+
+        <div class="details-row">
+            <label>Mevcut Kopya:</label>
+            <p>@Model.AvailableCopies</p>
+        </div>
+
+        <div class="text-center">
+            <a href="/Book/Index" class="btn btn-primary btn-back">Geri Dön</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
