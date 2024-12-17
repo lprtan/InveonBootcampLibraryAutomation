@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C99DA0A8-1719-403C-B18B-1C25E1BFDE09}|CoreLayer\\CoreLayer.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\corelayer\\mapping\\usermappingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C99DA0A8-1719-403C-B18B-1C25E1BFDE09}|CoreLayer\\CoreLayer.csproj|solutionrelative:corelayer\\mapping\\usermappingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C99DA0A8-1719-403C-B18B-1C25E1BFDE09}|CoreLayer\\CoreLayer.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\corelayer\\mapping\\iusermappingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,18 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\models\\errorhandling\\unauthorizedaccessexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\models\\errorhandling\\unauthorizedaccessexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\models\\errorhandling\\timeoutexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\models\\errorhandling\\timeoutexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\models\\errorhandling\\nullreferenceexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\models\\errorhandling\\nullreferenceexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\documents\\github\\inveonbootcamplibraryautomation\\inveonbootcamp\\inveonbootcamp.libraryautomation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -194,11 +182,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GetAllUser.cshtml",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\User\\GetAllUser.cshtml",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Views\\User\\GetAllUser.cshtml",
@@ -226,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UpdateUserRoleIndex.cshtml",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\UserRole\\UpdateUserRoleIndex.cshtml",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Views\\UserRole\\UpdateUserRoleIndex.cshtml",
@@ -240,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Controllers\\UserController.cs",
@@ -254,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Services\\Abstract\\IUserService.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\Abstract\\IUserService.cs",
@@ -268,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Services\\Concrete\\UserService.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\Concrete\\UserService.cs",
@@ -282,28 +270,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\Admin\\Index.cshtml*",
-              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Views\\Admin\\Index.cshtml*",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-16T17:02:56.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\Book\\Index.cshtml",
-              "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Views\\Book\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\Book\\Index.cshtml",
-              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Views\\Book\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T13:21:19.226Z",
               "EditorCaption": ""
             },
             {
@@ -321,7 +296,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\Book\\Index.cshtml",
+              "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Views\\Book\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\Book\\Index.cshtml",
+              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Views\\Book\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T13:21:19.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Program.cs",
+              "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Program.cs",
+              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Program.cs",
+              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAACYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:06:48.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LoginUserValidate.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Validation\\LoginUserValidate.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Validation\\LoginUserValidate.cs",
@@ -334,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CreateUserValidate.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Validation\\CreateUserValidate.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Validation\\CreateUserValidate.cs",
@@ -348,19 +349,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Program.cs",
-              "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Program.cs",
-              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Program.cs",
-              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T17:06:48.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "UserMappingService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\CoreLayer\\Mapping\\UserMappingService.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Mapping\\UserMappingService.cs",
@@ -517,45 +505,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "UnauthorizedAccessExceptionHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\UnauthorizedAccessExceptionHandler.cs",
-              "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\UnauthorizedAccessExceptionHandler.cs",
-              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\UnauthorizedAccessExceptionHandler.cs",
-              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\UnauthorizedAccessExceptionHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T11:20:44.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "TimeoutExceptionHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\TimeoutExceptionHandler.cs",
-              "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\TimeoutExceptionHandler.cs",
-              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\TimeoutExceptionHandler.cs",
-              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\TimeoutExceptionHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T11:20:42.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "NullReferenceExceptionHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\NullReferenceExceptionHandler.cs",
-              "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\NullReferenceExceptionHandler.cs",
-              "ToolTip": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\NullReferenceExceptionHandler.cs",
-              "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Models\\ErrorHandling\\NullReferenceExceptionHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T11:20:39.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Controllers\\HomeController.cs",
@@ -568,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 25,
               "Title": "BookController.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Controllers\\BookController.cs",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Controllers\\BookController.cs",
@@ -581,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 26,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Services\\Abstract\\IAccountService.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\Abstract\\IAccountService.cs",
@@ -594,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 27,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Controllers\\AccountController.cs",
@@ -607,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 28,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Services\\Concrete\\AccountService.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\Concrete\\AccountService.cs",
@@ -619,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 29,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Views\\Shared\\_Layout.cshtml",
@@ -631,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 30,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\DataAccessLayer\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Context\\AppDbContext.cs",
@@ -643,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 31,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Controllers\\AdminController.cs",
@@ -655,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 32,
               "Title": "IBookMappingService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\CoreLayer\\Mapping\\IBookMappingService.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Mapping\\IBookMappingService.cs",
@@ -667,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 33,
               "Title": "BookMappingService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\CoreLayer\\Mapping\\BookMappingService.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Mapping\\BookMappingService.cs",
@@ -679,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 34,
               "Title": "BookMappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\CoreLayer\\Mapping\\BookMappingProfile.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Mapping\\BookMappingProfile.cs",
@@ -691,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 35,
               "Title": "UserWithRolesDto.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\CoreLayer\\Dtos\\UserWithRolesDto.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Dtos\\UserWithRolesDto.cs",
@@ -703,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 36,
               "Title": "UserUpdateRolDto.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\CoreLayer\\Dtos\\UserUpdateRolDto.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Dtos\\UserUpdateRolDto.cs",
@@ -715,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 37,
               "Title": "BookListDto.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\CoreLayer\\Dtos\\BookListDto.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Dtos\\BookListDto.cs",
@@ -727,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 38,
               "Title": "BookDetailsDto.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\CoreLayer\\Dtos\\BookDetailsDto.cs",
               "RelativeDocumentMoniker": "CoreLayer\\Dtos\\BookDetailsDto.cs",
@@ -739,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 39,
               "Title": "GenericService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Services\\Concrete\\GenericService.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\Concrete\\GenericService.cs",
@@ -751,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 40,
               "Title": "BookService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Services\\Concrete\\BookService.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\Concrete\\BookService.cs",
@@ -763,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 41,
               "Title": "IBookService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Services\\Abstract\\IBookService.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\Abstract\\IBookService.cs",
@@ -775,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 42,
               "Title": "IGenericService.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Documents\\GitHub\\InveonBootcampLibraryAutomation\\InveonBootcamp\\BusinessLayer\\Services\\Abstract\\IGenericService.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Services\\Abstract\\IGenericService.cs",

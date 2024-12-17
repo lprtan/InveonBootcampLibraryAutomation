@@ -5,7 +5,6 @@ using DataAccessLayer.Context;
 using DataAccessLayer.Repositories;
 using DataAccessLayer.UnitOfWork;
 using EntityLayer.Concrete;
-using InveonBootcamp.LibraryAutomation.Models.ErrorHandling;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -34,10 +33,6 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddLogging();
-
-builder.Services.AddScoped<IExceptionHandler, NullReferenceExceptionHandler>();
-builder.Services.AddScoped<IExceptionHandler, UnauthorizedAccessExceptionHandler>();
-builder.Services.AddScoped<IExceptionHandler, TimeoutExceptionHandler>();
 
 builder.Services.AddScoped<IUserRoleService, UserRoleService>();
 
