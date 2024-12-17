@@ -57,18 +57,14 @@
 <body>
 
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Kullanıcıya Rol Atama</h2>
+        <h2 class="text-center mb-4">Kullanıcıya Rol Güncelleme</h2>
 
         <form action="@Url.Action("UpdateUserRole", "UserRole")" method="post">
             <input type="hidden" name="userId" value="@Model.UserId" />
 
             <div class="mb-3">
                 <label for="oldRoleName" class="form-label">Eski Rol</label>
-                <select class="form-select" id="oldRoleName" name="oldRoleName" required>
-                    <option value="@Model.OldRoleName" selected>@Model.OldRoleName</option>
-                    <option value="Admin">Admin</option>
-                    <option value="User">User</option>
-                </select>
+                <input type="text" class="form-control" id="OldRoleName" asp-for="OldRoleName" value="@Model.OldRoleName" disabled />
             </div>
 
             <div class="mb-3">

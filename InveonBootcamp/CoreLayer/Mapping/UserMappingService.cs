@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CoreLayer.Dtos;
 using EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,11 @@ namespace CoreLayer.Mapping
         public List<UserDto> MapToUserAppDtoList(List<UserApp> users)
         {
             return _mapper.Map<List<UserDto>>(users);
+        }
+
+        public UserLoginDto MapToUserLoginDto(UserApp user)
+        {
+            return _mapper.Map<UserLoginDto>(user);
         }
 
         UserDto IUserMappingService.MapToUserAppDto(UserApp user)

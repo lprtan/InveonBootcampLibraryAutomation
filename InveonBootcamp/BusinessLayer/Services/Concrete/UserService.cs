@@ -96,7 +96,7 @@ namespace BusinessLayer.Services.Concrete
             return (true, null, userDto);
         }
 
-        public async Task<(bool IsSuccess, string? ErrorMessage, UserDto? User)> LoginUserAsync(UserDto loginUserDto)
+        public async Task<(bool IsSuccess, string? ErrorMessage, UserLoginDto? User)> LoginUserAsync(UserLoginDto loginUserDto)
         {
             var user = await _user.FindByNameAsync(loginUserDto.UserName);
 
@@ -112,7 +112,7 @@ namespace BusinessLayer.Services.Concrete
                 return (false, "Şifre yanlış.", null);
             }
 
-            var userDto = _userMappingService.MapToUserAppDto(user);
+            var userDto = _userMappingService.MapToUserLoginDto(user);
 
             return (true, null, userDto);
         }

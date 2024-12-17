@@ -75,15 +75,16 @@
     </style>
 </head>
 <body>
-
     <form method="post" asp-action="Login" class="form-container">
         <div class="mb-3">
             <label for="exampleInputUsername" class="form-label">Kullanıcı Adı</label>
             <input type="text" class="form-control" id="exampleInputUsername" asp-for="UserName" placeholder="Kullanıcı adınızı giriniz">
+            <span class="text-danger" asp-validation-for="UserName"></span>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Şifre</label>
             <input type="password" class="form-control" id="exampleInputPassword1" asp-for="Password" placeholder="Şifrenizi girin">
+            <span class="text-danger" asp-validation-for="Password"></span>
         </div>
         <button type="submit" class="btn btn-primary">Giriş</button>
     </form>

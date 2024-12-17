@@ -33,7 +33,7 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
                 return RedirectToAction("GetAllUser", "User");
             }
 
-            return View(result.Errors);
+            return RedirectToAction("Error", "Error", new { message = result.Errors });
         }
 
         public IActionResult CreateRole()
@@ -45,13 +45,14 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
         public async Task<IActionResult> CreateRole(string roleName)
         {
             var result = await _userRoleService.CreateRoleAsync(roleName);
-
+            
             if (result.Succeeded)
             {
-                return RedirectToAction("Index", "Admin");
+                return RedirectToAction("Error", "Error", new { message = result.Errors });
+                //return RedirectToAction("Index", "Admin");
             }
 
-            return View(result.Errors);
+            return RedirectToAction("Error", "Error", new { message = result.Errors });
         }
 
         [HttpPost]
@@ -64,7 +65,7 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
                 return RedirectToAction("GetAllUser", "User");
             }
 
-            return View(result.Errors);
+            return RedirectToAction("Error", "Error", new { message = result.Errors });
         }
 
         [HttpPost]
@@ -77,7 +78,7 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
                 return RedirectToAction("ListRoles");
             }
 
-            return View("Error", new { message = "Rol silinemedi." });
+            return RedirectToAction("Error", "Error", new { message = result.Errors });
         }
 
         [HttpPost]
@@ -90,7 +91,7 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
                 return RedirectToAction("GetAllUser", "User");
             }
 
-            return View(result.Errors);
+            return RedirectToAction("Error", "Error", new { message = result.Errors });
         }
 
         public async Task<IActionResult> UpdateUserRoleIndex(string userId, string oldRoleName)

@@ -14,6 +14,7 @@ namespace CoreLayer.Mapping
         public UserMappingProfile()
         {
             CreateMap<UserApp, UserDto>();
+            CreateMap<UserApp, UserLoginDto>();
         }
     }
 }

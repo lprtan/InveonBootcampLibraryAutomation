@@ -35,13 +35,20 @@ namespace BusinessLayer.Services.Concrete
         public async Task<IdentityResult> CreateRoleAsync(string roleName)
         {
             var roleExists = await _roleManager.RoleExistsAsync(roleName);
-            //if (roleExists)
-            //{
-            //    return BadRequestResult("");
-            //}
+
+            if (roleExists)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "Rol bulunamadı." });
+            }
 
             var role = new IdentityRole(roleName);
             var result = await _roleManager.CreateAsync(role);
+
+            if (!result.Succeeded)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "Rol oluşturulamadı." });
+            }
+
             return result;
         }
 
@@ -55,6 +62,12 @@ namespace BusinessLayer.Services.Concrete
             }
 
             var result = await _roleManager.DeleteAsync(role);
+
+            if (!result.Succeeded)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "Rol silinemedi." });
+            }
+
             return result;
         }
 
@@ -75,30 +88,45 @@ namespace BusinessLayer.Services.Concrete
         public async Task<IdentityResult> RemoveRoleUserAsync(string userId, string roleName)
         {
             var user = await _userManager.FindByIdAsync(userId);
+
             if (user == null)
             {
                 return IdentityResult.Failed(new IdentityError { Description = "Kullanıcı bulunamadı." });
             }
 
             var result = await _userManager.RemoveFromRoleAsync(user, roleName);
+
+            if (!result.Succeeded)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "Kullanıcı rolü silinemedi." });
+            }
+
             return result;
         }
 
         public async Task<IdentityResult> UpdateUserRoleAsync(string userId, string oldRoleName, string newRoleName)
         {
             var user = await _userManager.FindByIdAsync(userId);
+
             if (user == null)
             {
                 return IdentityResult.Failed(new IdentityError { Description = "Kullanıcı bulunamadı." });
             }
 
             var removeResult = await _userManager.RemoveFromRoleAsync(user, oldRoleName);
+
             if (!removeResult.Succeeded)
             {
-                return removeResult; 
+                return IdentityResult.Failed(new IdentityError { Description = "Kullanıcı rolü silnirken hata oluştu" });
             }
 
             var addResult = await _userManager.AddToRoleAsync(user, newRoleName);
+
+            if (!addResult.Succeeded)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "Kullanıcı rolü güncellenirken hata oluştu" });
+            }
+
             return addResult;
         }
     }

@@ -1,0 +1,29 @@
+﻿@using InveonBootcamp.LibraryAutomation.Models
+@model ErrorViewModel
+
+@{
+    Layout ="~/Views/Shared/_ErrorLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="alert alert-danger">
+        <h1 class="text-center text-danger">Bir Hata Oluştu!</h1>
+        <h3 class="text-center text-danger">Beklenmedik bir durum meydana geldi.</h3>
+        <hr />
+
+        <div class="row">
+            <div class="col-12">
+                <p class="lead"><strong>Error Message:</strong></p>
+                <p class="alert alert-warning">@Model.ErrorMessage</p>
+            </div>
+
+            @if (!string.IsNullOrEmpty(Model.RequestId))
+            {
+                <div class="col-12 mt-3">
+                    <p class="lead"><strong>Request ID:</strong></p>
+                    <p class="alert alert-info"><code>@Model.RequestId</code></p>
+                </div>
+            }
+        </div>
+    </div>
+</div>

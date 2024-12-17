@@ -11,6 +11,7 @@ namespace CoreLayer.Mapping
     public interface IUserMappingService
     {
         UserDto MapToUserAppDto(UserApp user);
+        UserLoginDto MapToUserLoginDto(UserApp user);
         List<UserDto> MapToUserAppDtoList(List<UserApp> users);
     }
 }

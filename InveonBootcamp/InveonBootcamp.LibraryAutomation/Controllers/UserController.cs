@@ -31,14 +31,19 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(UserDto userModel)
         {
-            var result = await _userService.CreateUserAsync(userModel);
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
 
-            if (result.IsSuccess)
+            var user = await _userService.CreateUserAsync(userModel);
+
+            if (user.IsSuccess)
             {
                 return RedirectToAction("Login", "User");
             }
 
-            return View(result.User);
+            return View();
         }
 
         public async Task<IActionResult> GetUser()
@@ -47,10 +52,15 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
 
             if (string.IsNullOrEmpty(userName))
             {
-                return BadRequest("Kullanıcı adı boş olamaz.");
+                RedirectToAction("Error", "Error", new { message = "Kullanıcı adı boş olamaz" });
             }
 
             var user = await _userService.GetUserByNameAsync(userName);
+
+            if (!user.IsSuccess)
+            {
+                RedirectToAction("Error", "Error", new { message = user.ErrorMessage });
+            }
 
             return View(user.User);
         }
@@ -59,7 +69,12 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
         {
             var users = await _userService.GetAllUserAsync();
 
-            var userWithRolesDto= new List<UserWithRolesDto>();
+            var userWithRolesDto = new List<UserWithRolesDto>();
+
+            if (userWithRolesDto == null)
+            {
+                return RedirectToAction("Error", "Error", new { message = users.ErrorMessage });
+            }
 
             foreach (var user in users.User)
             {
@@ -81,8 +96,13 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Login(UserDto userLoginModel)
+        public async Task<ActionResult> Login(UserLoginDto userLoginModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
             var user = await _userService.LoginUserAsync(userLoginModel);
 
             if (user.IsSuccess)
@@ -101,7 +121,7 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
                 }
             }
 
-            return View(user.User);
+            return RedirectToAction("Error", "Error", new { message = user.ErrorMessage });
         }
 
         [HttpPost]
@@ -114,21 +134,21 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
                 return RedirectToAction("Index", "Book");
             }
 
-            return View(userUpdateModel);
+            return RedirectToAction("Error", "Error", new { message = user.ErrorMessage });
 
         }
 
         [HttpPost]
         public async Task<IActionResult> DeleteUser(string userId)
         {
-            var result = await _userService.DeleteByIdAsync(userId);
+            var user = await _userService.DeleteByIdAsync(userId);
 
-            if (result.IsSuccess)
+            if (user.IsSuccess)
             {
                 return RedirectToAction("GetAllUser", "User");
             }
 
-            return View(result.ErrorMessage);
+            return RedirectToAction("Error", "Error", new { message = user.ErrorMessage });
         }
     }
 }

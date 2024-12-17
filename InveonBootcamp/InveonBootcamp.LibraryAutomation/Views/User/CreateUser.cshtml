@@ -75,28 +75,33 @@
     </style>
 </head>
 <body>
-
     <form method="post" asp-action="CreateUser" class="form-container">
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
         <div class="mb-3">
             <label for="exampleInputName" class="form-label">Ad</label>
             <input type="text" class="form-control" id="exampleInputName" asp-for="FirstName" placeholder="Adınızı girin">
+            <span class="text-danger" asp-validation-for="FirstName"></span>
         </div>
         <div class="mb-3">
             <label for="exampleInputSurname" class="form-label">Soyad</label>
             <input type="text" class="form-control" id="exampleInputSurname" asp-for="LastName" placeholder="Soyadınızı girin">
+            <span class="text-danger" asp-validation-for="LastName"></span>
         </div>
         <div class="mb-3">
             <label for="exampleInputUsername" class="form-label">Kullanıcı Adı</label>
             <input type="text" class="form-control" id="exampleInputUsername" asp-for="UserName" placeholder="Kullanıcı adınızı giriniz">
+            <span class="text-danger" asp-validation-for="UserName"></span>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">E-Mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" asp-for="Email" placeholder="E-mail adresinizi girin" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text"></div>
+            <input type="email" class="form-control" id="exampleInputEmail1" asp-for="Email" placeholder="E-mail adresinizi girin">
+            <span class="text-danger" asp-validation-for="Email"></span>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Şifre</label>
             <input type="password" class="form-control" id="exampleInputPassword1" asp-for="Password" placeholder="Şifrenizi girin">
+            <span class="text-danger" asp-validation-for="Password"></span>
         </div>
 
         <button type="submit" class="btn btn-primary">Gönder</button>
@@ -105,6 +110,5 @@
             <p>Hesabınız var mı? <a href="@Url.Action("Login", "User")">Giriş yapın</a></p>
         </div>
     </form>
-
 </body>
 </html>

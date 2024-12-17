@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Validation
 {
-    internal class LoginUserValidate : AbstractValidator<UserDto>
+    public class LoginUserValidate : AbstractValidator<UserLoginDto>
     {
         public LoginUserValidate()
         {
