@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Alperen Tan\\Desktop\\bootcamp\\InveonBootcamp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\desktop\\bootcamp\\inveonbootcamp\\inveonbootcamp.libraryautomation\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\desktop\\bootcamp\\inveonbootcamp\\inveonbootcamp.libraryautomation\\views\\userrole\\updateuserroleindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\views\\userrole\\updateuserroleindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\desktop\\bootcamp\\inveonbootcamp\\inveonbootcamp.libraryautomation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|c:\\users\\alperen tan\\desktop\\bootcamp\\inveonbootcamp\\inveonbootcamp.libraryautomation\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{52634B52-2CCC-433A-A98D-F2F4D694AB26}|InveonBootcamp.LibraryAutomation\\InveonBootcamp.LibraryAutomation.csproj|solutionrelative:inveonbootcamp.libraryautomation\\controllers\\userrolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4D4AA38-C054-4D59-9A34-87B2291FF417}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\alperen tan\\desktop\\bootcamp\\inveonbootcamp\\businesslayer\\validation\\loginuservalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -178,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -195,13 +195,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UserRoleController.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Desktop\\bootcamp\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Controllers\\UserRoleController.cs",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Controllers\\UserRoleController.cs",
               "ToolTip": "C:\\Users\\Alperen Tan\\Desktop\\bootcamp\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Controllers\\UserRoleController.cs",
               "RelativeToolTip": "InveonBootcamp.LibraryAutomation\\Controllers\\UserRoleController.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAswFMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T12:02:04.835Z",
               "IsPinned": true,
@@ -209,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UpdateUserRoleIndex.cshtml",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Desktop\\bootcamp\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\UserRole\\UpdateUserRoleIndex.cshtml",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Views\\UserRole\\UpdateUserRoleIndex.cshtml",
@@ -223,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Desktop\\bootcamp\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Controllers\\UserController.cs",
@@ -263,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CreateRoleToUser.cshtml",
               "DocumentMoniker": "C:\\Users\\Alperen Tan\\Desktop\\bootcamp\\InveonBootcamp\\InveonBootcamp.LibraryAutomation\\Views\\UserRole\\CreateRoleToUser.cshtml",
               "RelativeDocumentMoniker": "InveonBootcamp.LibraryAutomation\\Views\\UserRole\\CreateRoleToUser.cshtml",

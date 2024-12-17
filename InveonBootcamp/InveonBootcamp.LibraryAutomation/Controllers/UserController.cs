@@ -44,7 +44,7 @@ namespace InveonBootcamp.LibraryAutomation.Controllers
                 return RedirectToAction("Login", "User");
             }
 
-            return View();
+            return RedirectToAction("Error", "Error", new { message = user.ErrorMessage });
         }
 
         public async Task<IActionResult> GetUser()
